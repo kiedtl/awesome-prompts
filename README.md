@@ -5,13 +5,20 @@ A non-curated list of awesome prompts for your favorite shells!
 
 Pull requests will be greatly appreciated!
 
-## Prompts
-### Cocoon
-The `babun` prompt from the `babun` shell ported to PowerShell.
+## Usage
+All the prompts in this repository are designed to be used as such:
+```powershell
+# in your profile
+. "path/to/prompt.sh
+```
+Simply download the appropriate file from any of the prompts in this repository and add it to `~`, then reference or `source` it in your shell's profile.
 
-### Decryptor
-An awesome prompt inspired by [no-more-secrets](https://github.com/bartobri/no-more-secrets).
-![](https://user-images.githubusercontent.com/32681240/54652367-09fe0f80-4a8d-11e9-8d1a-1f1d05a015f9.gif)
+## Adding your prompt
+All prompts that follow the following rules are welcome:
+- The prompt must be awesome or mimic an awesome prompt from another shell.
+- The prompt must be written by the person submitting the prompt. (No submitting code you didn't write!!)
+- The prompt must be self-contained, i.e. should not be spread out over more than one file.
+- The prompt must be completely cross-platform.
 
-### Promptless
-A blatent ripoff of [promptless](https://github.com/dylanaraps/promptless) for PowerShell.
+## License
+MIT
