@@ -1,7 +1,7 @@
 # awesome-prompts
-A non-curated list of awesome prompts for your favourite shells!
+A non-curated list of awesome prompts for your favorite shells!
 
-**NOTE** This project is ongoing, so just because you don't see your favourite shell here does not mean we hvae some religious hatred toward your shell - it just means we haven't ported any of the prompts yet to your shell.
+**NOTE** This project is ongoing, so just because you don't see your favorite shell here does not mean we have some religious hatred toward your shell - it just means we haven't ported any of the prompts yet to your shell.
 
 Pull requests will be greatly appreciated!
 
