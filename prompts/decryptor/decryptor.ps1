@@ -1,15 +1,8 @@
 $global:__errc = 0
 $values = @("33","36","37","38","39","46","45","44","42","43","47","58","59","94","94","46","46","126","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183","184","185","186","187")
 
-function Test-Administrator {
-    if ($PSVersionTable.Platform -eq 'Unix') {
-        return (whoami) -eq 'root'
-    } elseif ($PSVersionTable.Platform -eq 'Windows') {
-        return $false #TO-DO: find out how to distinguish this one
-    } else {
-        return ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')
-    }
-}
+# HELPER FUNCTIONS
+# stolen from Oh-My-Posh
 
 function Get-Drive {
     param(
