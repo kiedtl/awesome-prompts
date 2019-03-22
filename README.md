@@ -1,6 +1,10 @@
 # awesome-prompts
 A non-curated list of awesome prompts for your favourite shells!
 
+**NOTE** This project is ongoing, so just because you don't see your favourite shell here does not mean we hvae some religious hatred toward your shell - it just means we haven't ported any of the prompts yet to your shell.
+
+Pull requests will be greatly appreciated!
+
 ## Prompts
 ### Cocoon
 The `babun` prompt from the `babun` shell ported to PowerShell.
