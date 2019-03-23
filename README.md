@@ -15,10 +15,10 @@ Simply download the appropriate file from any of the prompts in this repository 
 
 ## Adding your prompt
 All prompts that follow the following rules are welcome:
-- The prompt must be awesome or mimic an awesome prompt from another shell.
+- Prompt must either be awesome or mimic an awesome prompt from another shell.
 - The prompt must be written by the person submitting the prompt. (No submitting code you didn't write!!)
 - The prompt must be self-contained, i.e. should not be spread out over more than one file.
-- The prompt must be completely cross-platform.
+- Prompt **must** be completely cross-platform.
 - **(Optional)** Prompt code should be compatible with all recent versions of their respective shells.
     - E.g. a PowerShell prompt should be compatible with both PowerShell 5 and PowerShell 6.
 
