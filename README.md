@@ -1,4 +1,8 @@
-# awesome-prompts
+<p align="center">
+    <img src="https://lptstr.github.io/lptstr-images/proj/awesome-prompts/logo.jpg" width="20%" />
+    <h1>awesome-prompts</h1>
+</p>
+
 A non-curated list of awesome prompts for your favorite shells!
 
 > **NOTE** This project is ongoing, so just because you don't see your favorite shell here does not mean we have some religious hatred toward your shell - it just means we haven't ported any of the prompts yet to your shell.
