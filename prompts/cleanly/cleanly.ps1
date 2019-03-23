@@ -77,27 +77,29 @@ function prompt {
     [char]$E = [char]0x1B
 
     # Reset cursor position
-	  $postion = $host.UI.RawUI.CursorPosition
-	  $postion.X = 0
-	  $host.UI.RawUI.CursorPosition = $postion
-
-	  $dir = get-location
-	  $folder = split-path $dir -leaf
-	  $spath = get-shortpath $dir
-	  $width = $host.UI.RawUI.BufferSize.Width.ToString()
+    $postion = $host.UI.RawUI.CursorPosition
+    $postion.X = 0
+    $host.UI.RawUI.CursorPosition = $postion
+    
+    $dir = get-location
+    $folder = split-path $dir -leaf
+    $spath = get-shortpath $dir
+    $width = $host.UI.RawUI.BufferSize.Width.ToString()
     $arrow = [system.text.encoding]::utf8.getstring((226,157,175))
+    
+    if (!($?)) { $arrow = "x" }
 
     write-host "$folder " -nonewline -f yellow
-	  write-host "$E[1m${arrow}${arrow}${arrow}$E[0m" -nonewline -f cyan
+    write-host "$E[1m${arrow}${arrow}${arrow}$E[0m" -nonewline -f cyan
 
     # Write the directory to the right of the screen
-	  $postion = $host.UI.RawUI.CursorPosition
-	  $postion.X = (($width) - ((($spath).Length) + 1))
-	  $host.UI.RawUI.CursorPosition = $postion
-	  write-host "$spath" -f cyan -nonewline
+    $postion = $host.UI.RawUI.CursorPosition
+    $postion.X = (($width) - ((($spath).Length) + 1))
+    $host.UI.RawUI.CursorPosition = $postion
+    write-host "$spath" -f cyan -nonewline
 
     $postion.X = ($folder.Length + 4)
-	  $host.UI.RawUI.CursorPosition = $postion
+    $host.UI.RawUI.CursorPosition = $postion
 
     return " "
 }
