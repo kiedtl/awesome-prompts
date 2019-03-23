@@ -87,7 +87,9 @@ function prompt {
     $width = $host.UI.RawUI.BufferSize.Width.ToString()
     $arrow = [system.text.encoding]::utf8.getstring((226,157,175))
     
-    if (!($?)) { $arrow = "x" }
+    $lcmf = $global:error.Count -gt $global:_errc
+	if ($lcmf) { $arrow = "x" }
+	$global:_errc = $global:error.Count
 
     write-host "$folder " -nonewline -f yellow
     write-host "$E[1m${arrow}${arrow}${arrow}$E[0m" -nonewline -f cyan
