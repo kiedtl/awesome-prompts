@@ -1,2 +1,5 @@
 # Cocoon
-The `babun` Oh-My-ZSH prompt from the Babun shell ported to PowerShell
+The `babun` Oh-My-ZSH prompt from the Babun shell ported to PowerShell.
+```
+{ folder } »                                                                       ~/path/../../to/dir
+```
