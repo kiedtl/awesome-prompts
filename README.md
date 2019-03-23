@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://lptstr.github.io/lptstr-images/proj/awesome-prompts/logo.jpg" width="20%" />
-    <h1>awesome-prompts</h1>
+    <div style="text-align:center"><h1>awesome-prompts</h1></div>
 </p>
 
 A non-curated list of awesome prompts for your favorite shells!
