@@ -10,7 +10,7 @@ Go to the `prompts/` directory and choose a prompt.
 All the prompts in this repository are designed to be used as such:
 ```powershell
 # in your profile
-. "path/to/prompt.sh
+. "path/to/prompt.sh"
 ```
 Simply download the appropriate file from any of the prompts in this repository and add it to `~`, then reference or `source` it in your shell's profile.
 
@@ -24,4 +24,4 @@ All prompts that follow the following rules are welcome:
     - E.g. a PowerShell prompt should be compatible with both PowerShell 5 and PowerShell 6.
 
 ## License
-MIT
+- MIT (c) all `awesome-prompt` contributers
