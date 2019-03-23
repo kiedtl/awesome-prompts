@@ -1,11 +1,12 @@
 # awesome-prompts
 A non-curated list of awesome prompts for your favorite shells!
 
-**NOTE** This project is ongoing, so just because you don't see your favorite shell here does not mean we have some religious hatred toward your shell - it just means we haven't ported any of the prompts yet to your shell.
+> **NOTE** This project is ongoing, so just because you don't see your favorite shell here does not mean we have some religious hatred toward your shell - it just means we haven't ported any of the prompts yet to your shell.
 
-Pull requests will be greatly appreciated!
+> Pull requests will be greatly appreciated!
 
 ## Usage
+Go to the `prompts/` directory and choose a prompt.
 All the prompts in this repository are designed to be used as such:
 ```powershell
 # in your profile
