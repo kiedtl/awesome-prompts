@@ -1,5 +1,6 @@
 ## The Duplex prompt
-A simple and clean prompt. 
+A simple and clean prompt.
+
 ![](https://i.imgur.com/fVjODmE.png)
 
 ```
