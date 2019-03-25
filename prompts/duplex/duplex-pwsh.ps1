@@ -3,6 +3,10 @@
 # ----- HELPER FUNCTIONS -------
 # stolen from Oh-My-Posh
 
+function Test-PsCore {
+    return $PSVersionTable.PSVersion.Major -gt 5
+}
+
 function Get-Drive {
     param(
         [Parameter(Mandatory = $true)]
@@ -89,9 +93,9 @@ function Get-ComputerName {
 
 function prompt {
     # variables
-    $host = get-computername
-    $user = [System.Environment]::UserName
-    $cwdr = get-shortpath
+    $hostname = get-computername
+    $username = [System.Environment]::UserName
+    $cwdr = get-shortpath $(pwd)
     
     # chars
     $dash = [text.encoding]::getstring((226,148,128))
@@ -117,7 +121,7 @@ function prompt {
     
     # write the rest of the prompt
     $prompt2 = [text.encoding]::getstring((226,148,148,226,148,128,226,148,128,226,149,188))
-    write-host "${E}[0;39m${user}${E}[01;33m@${E}[01;96m${host}" -nonewline
+    write-host "${E}[0;39m${username}${E}[01;33m@${E}[01;96m${hostname}" -nonewline
     write-host "${E}[0;31m]${dash}[${E}[0;32m${cwdr}${E}[0;31m]" -nonewline
     write-host "`n${E}[0;31m${prompt} ${E}[0m${E}[01;33m`$${E}[0m "
 }
