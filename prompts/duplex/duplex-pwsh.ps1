@@ -101,13 +101,10 @@ function prompt {
     $dash = [text.encoding]::UTF8.getstring((226,148,128))
 
     # print a newline
-    write-host "" -nonewline
+    write-host "`n" -nonewline
     
     # escape character
     $E = [char]0x1B
-    
-    # set color
-    write-host "$E[0;39m" -nonewline
     
     # Add ┌─ character
     $bracket1 = [text.encoding]::UTF8.getstring((226,148,140,226,148,128))
