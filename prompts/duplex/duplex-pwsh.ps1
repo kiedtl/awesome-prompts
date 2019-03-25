@@ -96,31 +96,32 @@ function prompt {
     $hostname = get-computername
     $username = [System.Environment]::UserName
     $cwdr = get-shortpath $(pwd)
-    
+
     # chars
     $dash = [text.encoding]::UTF8.getstring((226,148,128))
 
     # print a newline
     write-host "`n" -nonewline
-    
+
     # escape character
     $E = [char]0x1B
-    
+
     # Add ┌─ character
     $bracket1 = [text.encoding]::UTF8.getstring((226,148,140,226,148,128))
-    write-host "${bracket1}" -nonewline
-    
+    write-host "${bracket1}[" -nonewline -f Gray
+
     # write [✗]─ if previous command failed
-    $cfailed = [text.encoding]::UTF8.getstring((91,226,156,151,93,226,148,128))
-    if ($lastexitcode -ne 0) {
+    $lcmf = $global:error.Count -gt $global:_errc
+    if ($lcmf) {
         write-host "${cfailed}" -nonewline
     }
-    
+	  $global:_errc = $global:error.Count
+
     # write the rest of the prompt
     $prompt2 = [text.encoding]::UTF8.getstring((226,148,148,226,148,128,226,148,128,226,149,188))
     write-host "${E}[0;39m${username}${E}[01;33m@${E}[01;96m${hostname}" -nonewline
     write-host "${E}[0;31m]${dash}[${E}[0;32m${cwdr}${E}[0;31m]" -nonewline
     write-host "`n${E}[0;31m${prompt2} ${E}[0m${E}[01;33m`$${E}[0m" -nonewline
-    
+
     return " "
 }
