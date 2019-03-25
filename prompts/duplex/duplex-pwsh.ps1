@@ -107,7 +107,7 @@ function prompt {
     $E = [char]0x1B
     
     # set color
-    write-host "$E[0;31m" -nonewline
+    write-host "$E[0;39m" -nonewline
     
     # Add ┌─ character
     $bracket1 = [text.encoding]::UTF8.getstring((226,148,140,226,148,128))
