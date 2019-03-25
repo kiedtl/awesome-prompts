@@ -123,5 +123,7 @@ function prompt {
     $prompt2 = [text.encoding]::UTF8.getstring((226,148,148,226,148,128,226,148,128,226,149,188))
     write-host "${E}[0;39m${username}${E}[01;33m@${E}[01;96m${hostname}" -nonewline
     write-host "${E}[0;31m]${dash}[${E}[0;32m${cwdr}${E}[0;31m]" -nonewline
-    write-host "`n${E}[0;31m${prompt} ${E}[0m${E}[01;33m`$${E}[0m "
+    write-host "`n${E}[0;31m${prompt2} ${E}[0m${E}[01;33m`$${E}[0m"
+    
+    return " "
 }
