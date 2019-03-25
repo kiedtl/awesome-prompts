@@ -1,4 +1,4 @@
-## The Duplex prompt
+## Duplex
 A simple and clean prompt.
 
 ![](https://i.imgur.com/fVjODmE.png)
